@@ -48,6 +48,9 @@
       "limit": "10 KB"
     }
   ],
+  "resolutions": {
+    "styled-components": "^5"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.22.10",
     "@babel/preset-react": "^7.22.5",
@@ -63,6 +66,7 @@
     "@storybook/testing-library": "^0.2.0",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
+    "@types/styled-components": "^5.1.26",
     "husky": "^8.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -71,5 +75,8 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "styled-components": "^6.0.7"
   }
 }
