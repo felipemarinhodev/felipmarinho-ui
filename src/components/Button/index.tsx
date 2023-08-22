@@ -1,7 +1,8 @@
 import React from 'react';
+import * as S from './styled';
 
 export const Button = () => {
   return (
-    <button>Clique aqui!</button>
+    <S.Button>Clique aqui!</S.Button>
   )
 }
