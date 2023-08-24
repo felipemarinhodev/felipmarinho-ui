@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { ButtonProps } from '.';
 
 export const Button = styled.button<ButtonProps>`
-         ${({ type }) => css`
+         ${({ type }: ButtonProps) => css`
            display: flex;
            gap: 8px;
            align-items: center;
@@ -13,7 +13,7 @@ export const Button = styled.button<ButtonProps>`
            font-size: 20px;
            border-radius: 8px;
            cursor: pointer;
-           ${type === 'primary'
+           ${type! === 'primary'
              ? css`
                  &:hover {
                    background: #b87900;
