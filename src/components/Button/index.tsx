@@ -1,14 +1,16 @@
 import React from 'react';
-import * as S from './styled';
-
+import * as S from './styles';
 export interface ButtonProps {
-  text?: string;
-  type?: 'primary' | 'secondary'
-  onClick?: () => void
+  children: React.ReactNode;
+  type?: 'primary' | 'secondary';
+  onClick?: () => void;
+  icon?: React.ReactNode;
 }
 
-export const Button = ({ text, onClick, type = 'primary' }: ButtonProps) => {
+export const Button = ({ children, onClick, type = 'primary' }: ButtonProps) => {
   return (
-    <S.Button onClick={onClick} type={type}>{text}</S.Button>
+    <S.Button onClick={onClick} type={type}>
+      {children && children}
+    </S.Button>
   )
 }
