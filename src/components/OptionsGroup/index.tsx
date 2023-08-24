@@ -65,7 +65,7 @@ export const OptionsGroup = ({ options, onChange, defaultValue }: OptionsGroupPr
     <>
       {options.map(option => (
         <Section
-          selected={selected?.id === option.id}
+          selected={selected !== null && selected.id === option.id}
           key={option.id}
           onClick={() => handleSelected(option)}
         >
